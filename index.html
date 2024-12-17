@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="student-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required><br><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required><br><br>
+            <label for="course">Course:</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="BTech">BTech</option>
+                <option value="BCA">BCA</option>
+                <option value="MTECH">MTECH</option>
+                <option value="MCA">MCA</option>
+            </select><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Course</th>
+                    <th>DOB</th>
+                </tr>
+            </thead>
+            <tbody id="student-data">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
